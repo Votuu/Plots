@@ -1,0 +1,22 @@
+name: Plots
+version: '${project.version}'
+main: de.votuucraft.plots.Plots
+api-version: 1.18
+authors: [ Votuu ]
+
+commands:
+
+  plot:
+    aliases:
+      - plot
+      - gebiet
+  samples:
+    aliases:
+      - beispiele
+      - sample
+  apply:
+    permission: plot.apply
+    aliases:
+      - bewerbung
+      - bewerbungen
+      - applications
