@@ -35,7 +35,7 @@ public class InventoryClickListener implements Listener {
             }
         }
 
-        //if(event.getClickedInventory() == application.applyController().getList().getInventory()) {
+        /*if(event.getClickedInventory() == application.applyController().getList().getInventory()) {
             event.setCancelled(true);
 
             if(event.getCurrentItem().getItemMeta().getDisplayName().startsWith("§7Plot von §9")) {
@@ -48,6 +48,6 @@ public class InventoryClickListener implements Listener {
                 Bukkit.dispatchCommand(player, "plot status");
                 player.closeInventory();
             }
-        //}
+        }*/
     }
 }

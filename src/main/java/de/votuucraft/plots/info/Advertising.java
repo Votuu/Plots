@@ -2,6 +2,7 @@ package de.votuucraft.plots.info;
 
 import de.votuucraft.plots.plots.Plot;
 import de.votuucraft.plots.Plots;
+import de.votuucraft.plots.yaml.Config;
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Bukkit;
@@ -49,17 +50,7 @@ public class Advertising {
                         bar.getBossBar().setTitle("§7Plot von §a" + Bukkit.getOfflinePlayer(plot.getInformation().getOwner()).getName());
                     }
 
-                    if(id == 1) {
-                        if(application.plotController().getPlot(player.getUniqueId()) != null) {
-                            player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent("§7Du kannst dein §9Plot §7mit §9/plot submit §7abgeben"));
-                        }else {
-                            player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent("§7Du kannst ein §9Plot §7mit §9/plot get §7erstellen"));
-                        }
-                    }else if(id == 2) {
-                        player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent("§9§lғʀᴇᴇ ʀᴏʙᴜx? §7Gucke hier vorbei§8: §atwitter.com/nichtamon"));
-                    }else if(id == 3) {
-                        player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent("§c§lʟᴇɢᴇɴᴅᴡᴀʀʀɪᴏʀ §7hat ein neues Video hochgeladen§8: §4yt.votuu.de/"));
-                    }
+                    player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent(Config.getString("actionbar.info-" + id)));
                 });
             }
         }.runTaskTimer(JavaPlugin.getPlugin(Plots.class), 20, 20);

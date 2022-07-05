@@ -30,6 +30,16 @@ public final class Plots extends JavaPlugin {
         new Config(new File("./application -build/yaml/"), "config");
 
         Config.create("applications", true);
+
+        Config.create("actionbar.info-3", "§c§lʟᴇɢᴇɴᴅᴡᴀʀʀɪᴏʀ §7hat ein neues Video hochgeladen§8: §4yt.votuu.de/");
+        Config.create("actionbar.info-2", "§9§lғʀᴇᴇ ʀᴏʙᴜx? §7Gucke hier vorbei§8: §atwitter.com/nichtamon");
+        Config.create("actionbar.info-1", "§9§lғʀᴇᴇ ʀᴏʙᴜx? §7Gucke hier vorbei§8: §atwitter.com/nichtamon");
+
+        Config.create("plot-sign.line-4", " ");
+        Config.create("plot-sign.line-3", "&9&lPlots");
+        Config.create("plot-sign.line-2", "&7by &9Votuu");
+        Config.create("plot-sign.line-1", " ");
+
         Config.create("plot-data.plots", "");
 
         applications = Config.getBoolean("applications");

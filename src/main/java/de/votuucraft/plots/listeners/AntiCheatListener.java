@@ -2,6 +2,7 @@ package de.votuucraft.plots.listeners;
 
 import de.votuucraft.plots.Plots;
 import de.votuucraft.plots.plots.Plot;
+import de.votuucraft.plots.yaml.Config;
 import org.bukkit.entity.FallingBlock;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -99,7 +100,11 @@ public class AntiCheatListener implements Listener {
 
     @EventHandler
     public void onPlayerDropItem(PlayerDropItemEvent event) {
-        event.setCancelled(true);
+        Player player = event.getPlayer();
+
+        if(!player.hasPermission("plot.drop")) {
+            event.setCancelled(true);
+        }
     }
 
     @EventHandler
@@ -146,11 +151,11 @@ public class AntiCheatListener implements Listener {
     public void onSignChange(SignChangeEvent event) {
         Player player = event.getPlayer();
 
-        if(!player.hasPermission("plot.customsign")) {
-            event.setLine(0, "");
-            event.setLine(1, "§2ᴅᴠɴᴛʀ");
-            event.setLine(2, "§7ᴀᴘᴘʟɪᴄᴀᴛɪᴏɴ");
-            event.setLine(3, "");
+        if(!player.hasPermission("plot.sign")) {
+            event.setLine(0, Config.getString("plot-sign.line-4"));
+            event.setLine(1, Config.getString("plot-sign.line-3"));
+            event.setLine(2, Config.getString("plot-sign.line-2"));
+            event.setLine(3, Config.getString("plot-sign.line-1"));
         }
     }
 
