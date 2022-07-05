@@ -1,4 +1,12 @@
-![Logo](https://raw.githubusercontent.com/Votuu/Plots/main/.assets/banner.png?token=GHSAT0AAAAAABU5EPL4HBECJQVPZ2ZA34Z2YWEFUPQ)
+![Logo](./.assets/banner.png)
+
+## Setup
+
+1. Download the latest Release
+2. Create a minecraft server in version 1.18+
+3. Download latest Version of FastAsyncWorldEdit
+4. Put FastAsyncWorldEdit and Plots.jar in the Plugins folder
+5. Put the folders in the Plugins folder
 
 ## Permissions
 plot.break - Can break blocks everywhere<br/>
