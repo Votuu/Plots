@@ -3,7 +3,7 @@
 ## Setup
 
 1. Download the latest Release
-2. Create a minecraft server in version 1.18+
+2. Create a minecraft server in version 1.18+ - :warning: empty map will not created by plugin. the world "world" will be used
 3. Download latest Version of FastAsyncWorldEdit
 4. Put FastAsyncWorldEdit and Plots.jar in the Plugins folder
 5. Put the folders in the Plugins folder
