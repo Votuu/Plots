@@ -1,4 +1,4 @@
-![Logo](https://raw.githubusercontent.com/Votuu/Plots/main/.assets/banner.png?token=GHSAT0AAAAAABU5EPL5UQN7GKRN77B6I56UYWEFCJQ)
+![Logo](https://raw.githubusercontent.com/Votuu/Plots/main/.assets/banner.png?token=GHSAT0AAAAAABU5EPL4HBECJQVPZ2ZA34Z2YWEFUPQ)
 
 ## Permissions
 plot.break - Can break blocks everywhere<br/>
